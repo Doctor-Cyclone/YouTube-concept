@@ -7,3 +7,4 @@
 - JS
 - Normalize.css
 - SVG Sprites
+- Swiperjs.com

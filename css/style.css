@@ -2,11 +2,14 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 .header{
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
     padding: 20px 70px 20px 32px;
 }
 /*Кнопка меню*/
@@ -21,8 +24,12 @@ body{
     margin-right: 28px;
 
     background-color: #fff;
+    outline: none;
     border: none;
     cursor: pointer;
+}
+.menu-button:focus{
+    border: none;
 }
 .menu-line{
     display: block;
@@ -50,15 +57,23 @@ body{
     width: 100%;
     padding: 12px 23px;
     background-color: transparent;
+    outline: none;
+    border: none;
+}
+.input-search:focus{
     border: none;
 }
 .button-search{
     width: 19px;
     height: 19px;
     padding: 0;
+    outline: none;
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+.button-search:focus{
+    border: none;
 }
 .icon-search{
     fill: #000;
@@ -88,5 +103,44 @@ body{
 .user-avatar{
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+}
+/*Меню*/
+.sidebar{
+    padding-left: 32px;
+}
+.nav-menu{
+    margin-bottom: 60px;
+}
+.nav-item{
+    margin-bottom: 28px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    color: #898989;
+}
+.nav-link:hover{
+    color: #FF0000;
+}
+.nav-link:hover .nav-item__icon{
+    fill: #FF0000;
+}
+.nav-item__icon{
+    fill: #898989;
+}
+.nav-text{
+    margin-left: 13px;
+}
+/*Подписки*/
+.nav-subscriptions-title{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+.nav-img{
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
 }

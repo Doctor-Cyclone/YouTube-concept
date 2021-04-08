@@ -7,10 +7,16 @@ body{
     font-weight: 400;
 }
 .header{
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    top: 0;
     display: flex;
     align-items: center;
+    width: 100%;
     margin-bottom: 30px;
     padding: 20px 70px 20px 32px;
+    background-color: #fff;
 }
 /*Кнопка меню*/
 .menu-button{
@@ -107,7 +113,19 @@ body{
 }
 /*Меню*/
 .sidebar{
+    position: fixed;
+    left: 0;
+    top: 114px;
+    width: 12%;
+    height: calc(100% - 114px);
+    overflow-y: auto;
     padding-left: 32px;
+    background-color: #fff;
+}
+.content{
+    width: 100%;
+    margin-top: 85px;
+    padding: 30px 0 0 13%;
 }
 .nav-menu{
     margin-bottom: 60px;
@@ -143,4 +161,172 @@ body{
     width: 26px;
     height: 26px;
     border-radius: 50%;
+}
+/*Канал*/
+.channel{
+    position: relative;
+    margin-bottom: 49px;
+}
+.channel-title{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    color: #19202C;
+}
+.channel-sub-title{
+    margin-bottom: 30px;
+}
+.channel-avatar{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+/*Превью видео*/
+.video-card{
+    width: 250px;
+}
+.video-thumd{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border-radius: 14px;
+}
+.channel-video-thumdnail{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+.video-duration{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 3px 9px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+.video-title{
+    margin: 10px 0 4px 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+}
+.video-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+.video-counter{
+    display: flex;
+}
+.video-views{
+    margin-right: 5px;
+}
+.video-views::after{
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #C2C2C2;
+    margin-left: 5px;
+}
+.slider-buttons{
+    position: absolute;
+    right: 8%;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+}
+.channel-button{
+    cursor: pointer;
+}
+/*Рекомендации*/
+.recommended{
+    position: relative;
+    margin-bottom: 49px;
+}
+.recommended-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    color: #19202C;
+}
+.recommended-card{
+    width: 540px;
+}
+.recommended-thumd{
+    position: relative;
+    width: 540px;
+    height: 250px;
+    border-radius: 14px;
+}
+.recommended-video-thumdnail{
+    width: 540px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+.recommended-avatar{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.recommended-button{
+    cursor: pointer;
+}
+/*Рекомендованный канал*/
+.channel-recommended{
+    position: relative;
+    margin-bottom: 49px;
+}
+.channel-recommended-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.channel-recommended-text{
+    margin-left: 19px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+}
+.channel-recommended-button{
+    cursor: pointer;
+}
+.subscribe-btn{
+    position: absolute;
+    right: 100px;
+    width: 154px;
+
+    padding: 10px 20px;
+    
+    border: none;
+    outline: none;
+    background: #FF0000;
+    border-radius: 20px;
+
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+
+    cursor: pointer;
 }

@@ -241,18 +241,8 @@ body{
     cursor: pointer;
 }
 /*Рекомендации*/
-.recommended{
-    position: relative;
-    margin-bottom: 49px;
-}
 .recommended-title{
-    display: flex;
-    align-items: center;
     margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 33px;
-    color: #19202C;
 }
 .recommended-thumd{
     position: relative;
@@ -266,23 +256,11 @@ body{
     object-fit: cover;
     border-radius: 14px;
 }
-.recommended-avatar{
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    border-radius: 50%;
-}
 .recommended-button{
     cursor: pointer;
 }
 /*Рекомендованный канал*/
-.channel-recommended{
-    position: relative;
-    margin-bottom: 49px;
-}
 .channel-recommended-title{
-    display: flex;
-    align-items: center;
     margin-bottom: 30px;
 }
 .channel-recommended-text{
@@ -292,9 +270,6 @@ body{
     font-size: 16px;
     line-height: 20px;
     color: #C2C2C2;
-}
-.channel-recommended-button{
-    cursor: pointer;
 }
 .subscribe-btn{
     position: absolute;
